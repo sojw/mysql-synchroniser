@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: buffett-component-test1
+  profiles:
+    active: standalone
+  main:
+    allow-bean-definition-overriding: true
+
+---
+spring:
+  profiles: rc
