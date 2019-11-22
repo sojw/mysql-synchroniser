@@ -32,6 +32,7 @@ import java.util.Set;
 import org.apache.commons.collections4.CollectionUtils;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.jbuncle.mysqlsynchroniser.connection.ArrayRowMapper;
@@ -46,6 +47,7 @@ import lombok.extern.slf4j.Slf4j;
  * @author James Buncle <jbuncle@hotmail.com>
  */
 @Slf4j
+@Ignore
 public class ScriptGeneratorTest {
     private ConnectionStrategy source;
     private ConnectionStrategy target;
@@ -69,8 +71,8 @@ public class ScriptGeneratorTest {
 
     @Before
     public void setUp() throws Exception {
-        this.source = new ConnectionStrategy(createDataSource("10.127.45.75", "pfms", "pfm_dev", "pfm1234", 20306));
-        this.target = new ConnectionStrategy(createDataSource("10.127.198.47", "pfms", "pfms_dev", "pfms1234", 20306));
+        this.source = new ConnectionStrategy(createDataSource("zzz", "zzz", "zz", "zz", 20306));
+        this.target = new ConnectionStrategy(createDataSource("zzzz", "zzz", "zz", "zz", 20306));
     }
 
     //    /**
